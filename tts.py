@@ -1,5 +1,7 @@
 
-import os, requests, time
+import os
+import requests
+import time
 from xml.etree import ElementTree
 
 subscription_key = ''

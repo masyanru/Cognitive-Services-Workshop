@@ -2,7 +2,7 @@
 
 SERVER_ADDRESS = "https://api.cognitive.microsoft.com";
 ENDPOINT_URL = SERVER_ADDRESS + "/inkrecognizer/v1.0-preview/recognize";
-SUBSCRIPTION_KEY = "";
+SUBSCRIPTION_KEY = "d5f018e2b63343daa1b8ca7e1ebcfb8e";
 
 // Languages for user to try
 LANGUAGE_TAGS_TO_TRY = ["en-US", "ru-RU", "de-DE", "en-GB", "fr-FR", "hi-IN", "ja-JP", "ko-KR", "zh-CN"];

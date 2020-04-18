@@ -3,7 +3,7 @@ import requests
 from pprint import pprint
 import os
 
-subscription_key = ""
+subscription_key = "1242c3d427ae452382c699390769b569"
 endpoint = "https://textanalyticsworkshop.cognitiveservices.azure.com"
 
 # language detection

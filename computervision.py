@@ -10,17 +10,17 @@ from PIL import Image
 from io import BytesIO
 
 
-subscription_key = ''
+subscription_key = '74ddc947dd6e4779b6174663b8a5f646'
 endpoint = 'https://computervision-mai.cognitiveservices.azure.com/'
 
 analyze_url = endpoint + "vision/v2.1/analyze"
-image_path = "C:/PycharmProjects/cognitiveservices/106177316-1570812159690manusinglaptopinkitchen.jpg"
+image_path = "106177316-1570812159690manusinglaptopinkitchen.jpg"
 
 # Read the image into a byte array
 image_data = open(image_path, "rb").read()
 headers = {'Ocp-Apim-Subscription-Key': subscription_key,
            'Content-Type': 'application/octet-stream'}
-params = {'visualFeatures': 'Categories,Description,Color'}
+params = {'visualFeatures': 'Categories,Description,Color,Tags,Adult'}
 response = requests.post(
     analyze_url, headers=headers, params=params, data=image_data)
 response.raise_for_status()

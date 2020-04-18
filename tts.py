@@ -4,7 +4,7 @@ import requests
 import time
 from xml.etree import ElementTree
 
-subscription_key = ''
+subscription_key = 'f8e534af7f93466492a823b0c90fa2ce'
 
 
 class TextToSpeech(object):
@@ -40,7 +40,7 @@ class TextToSpeech(object):
         xml_body.set('{http://www.w3.org/XML/1998/namespace}lang', 'ru-ru')
         voice = ElementTree.SubElement(xml_body, 'voice')
         voice.set('{http://www.w3.org/XML/1998/namespace}lang', 'ru-RU')
-        voice.set('name', 'ru-RU-Pavel-Apollo')
+        voice.set('name', 'ru-RU-EkaterinaRUS')
         # Short name for 'Microsoft Server Speech Text to Speech Voice (en-US, Guy24KRUS)'
         voice.text = self.tts
         body = ElementTree.tostring(xml_body)

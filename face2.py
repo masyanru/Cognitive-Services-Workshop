@@ -2,13 +2,13 @@ import requests
 import json
 
 # set to your own subscription key value
-subscription_key = ''
+subscription_key = '9bb017d33b6d426ea26400eadffeeafa'
 assert subscription_key
 
 # replace <My Endpoint String> with the string from your endpoint URL
 face_api_url = 'https://cognitivefaceworkshop.cognitiveservices.azure.com/face/v1.0/detect'
 
-image_url = 'https://upload.wikimedia.org/wikipedia/commons/3/37/Dagestani_man_and_woman.jpg'
+image_url = 'https://pbs.twimg.com/profile_images/1221837516816306177/_Ld4un5A_400x400.jpg'
 
 headers = {'Ocp-Apim-Subscription-Key': subscription_key}
 

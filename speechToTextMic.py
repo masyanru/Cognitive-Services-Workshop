@@ -1,18 +1,15 @@
 import azure.cognitiveservices.speech as speechsdk
 
-# Replace with your own subscription key and region identifier from here: https://aka.ms/speech/sdkregion
+# Creates an instance of a speech config with specified subscription key and service region.
+# Replace with your own subscription key and service region (e.g., "westus").
 speech_key, service_region = "", "westeurope"
 speech_config = speechsdk.SpeechConfig(subscription=speech_key, region=service_region)
 
-audio_filename = "speechtotext.wav"
-audio_input = speechsdk.audio.AudioConfig(filename=audio_filename)
-
 # Creates a recognizer with the given settings
-speech_recognizer = speechsdk.SpeechRecognizer(speech_config=speech_config, language='ru-RU', audio_config=audio_input)
+speech_recognizer = speechsdk.SpeechRecognizer(speech_config=speech_config, language='ru-RU')
 
-print("Recognizing first result...")
+print("Say something...")
 
-# For long-running multi-utterance recognition, use start_continuous_recognition() instead.
 result = speech_recognizer.recognize_once()
 
 # Checks result.

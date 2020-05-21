@@ -4,7 +4,7 @@ import requests
 import time
 from xml.etree import ElementTree
 
-subscription_key = 'f8e534af7f93466492a823b0c90fa2ce'
+subscription_key = ''
 
 
 class TextToSpeech(object):

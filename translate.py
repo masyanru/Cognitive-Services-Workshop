@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import os, requests, uuid, json
 
-subscription_key = '94be449c77a546359b1d9f53c4adbbd5'
+subscription_key = ''
 endpoint = 'https://api.cognitive.microsofttranslator.com'
 
 # that you are using the latest endpoint: https://docs.microsoft.com/azure/cognitive-services/translator/reference/v3-0-translate

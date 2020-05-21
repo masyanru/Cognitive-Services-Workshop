@@ -3,7 +3,7 @@ import requests
 from pprint import pprint
 import os
 
-subscription_key = "1242c3d427ae452382c699390769b569"
+subscription_key = ""
 endpoint = "https://textanalyticsworkshop.cognitiveservices.azure.com"
 
 # language detection
@@ -60,7 +60,7 @@ documents = {"documents": [
     {"id": "4", "language": "es",
      "text": "La carretera estaba atascada. Había mucho tráfico el día de ayer."},
     {"id": "5", "language": "ru",
-     "text": "Я прекрасно провёл время в вашем отеля. Огромное спасибо."},
+     "text": "Я прекрасно провёл время в вашем отеля Microsoft. Огромное спасибо."},
     {"id": "6", "language": "ru",
      "text": "Хуже просто некуда, полный отстой, сервис сутками лежит, хватит уже мучать пользователей."}
 ]}
